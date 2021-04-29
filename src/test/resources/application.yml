@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  undertow:
+    io-worker-threads: 2
+    uri-encoding: utf-8
+
+nacos:
+  addr: 127.0.0.1:8848
+
+application:
+  name: phc-test1
+  group: DEV_GROUP
+
+client:
+  basePackages: com.silent.client
