@@ -158,7 +158,7 @@ public class NacosSubcriber implements ApplicationListener<ApplicationReadyEvent
 			case DYNAMIC_WEIGHT_ROUND:
 				return new DynamicWeightRoundRule(loadBalancer);
 			default:
-				return null;
+				return new RoundRule(loadBalancer);
 		}
 	}
 }
